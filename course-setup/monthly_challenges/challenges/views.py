@@ -21,5 +21,5 @@ def monthly_challenges(request, month):
     elif month == 'march':
         challenge_text = 'This is actually working on March too!'
     else:
-        return 
+        return HttpResponseNotFound("This month is not valid!")
     return HttpResponse(challenge_text)
