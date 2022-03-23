@@ -15,7 +15,7 @@ monthly_challenges = {
     "september": "This works on February!",
     "october": "This is actually working on March too!",
     "november": "This works",
-    "december": "This works on February!",
+    "december": None,
 }
 
 # Create your views here.

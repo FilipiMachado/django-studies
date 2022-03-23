@@ -8,7 +8,11 @@
   <body>
     <div>
       <h1 style="color: tomato">{{ title|title }}'s Challenge</h1>
+      {% if text is not None %}
       <h2 style="color: #303030">{{ text }}</h2>
+      {% else %}
+      <p style="color: #303030">There is no challenge for this month yet!</p>
+      {% endif %}
     </div>
   </body>
 </html>
