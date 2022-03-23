@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monthly Challenge</title>
+  <title>{{ title }}</title>
 </head>
 <body>
   <div>
-    <h1 style="color: tomato;">This Month's Challenge</h1>
-    <h2>{{ text }}</h2>
+    <h1 style="color: tomato;">{{ title|title }}'s Challenge</h1>
+    <h2 style="color: #303030">{{ text }}</h2>
   </div>
 </body>
 </html>
