@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
+    <title>All Challenges</title>
   </head>
   <body>
-    <div>
-      <h1 style="color: tomato">{{ title|title }}'s Challenge</h1>
-      <h2 style="color: #303030">{{ text }}</h2>
-    </div>
+    <ul>
+      {% for month in months %}
+        <li><a href="">{{ month|title }}</a></li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
