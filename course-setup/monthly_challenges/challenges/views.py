@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
 
 monthly_challenges = {
-    "january": "This works",
+    "january": "This works!",
     "february": "This works on February!",
     "march": "This is actually working on March too!",
     "april": None,
