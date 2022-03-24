@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block content %}
+  {% include "challenges/includes/header.html" %}  
+
   <h1 style="color: tomato">{{ title|title }}'s Challenge</h1>
   {% if text is not None %}
     <h2 style="color: #303030">{{ text }}</h2>
