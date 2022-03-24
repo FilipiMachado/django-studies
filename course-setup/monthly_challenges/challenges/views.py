@@ -7,7 +7,7 @@ monthly_challenges = {
     "january": "This works",
     "february": "This works on February!",
     "march": "This is actually working on March too!",
-    "april": "This works",
+    "april": None,
     "may": "This works on February!",
     "june": "This is actually working on March too!",
     "july": "This works",
