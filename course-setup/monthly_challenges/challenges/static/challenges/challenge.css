@@ -1,0 +1,17 @@
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff6347;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}

@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "challenges/challenge.css" %}"/>
+  <link rel="stylesheet" href="{% static "challenges/includes/header.css" %}"/>
+{% endblock %}
 
 {% block page_title %}
   {{ title }}
@@ -7,11 +13,11 @@
 {% block content %}
   {% include "challenges/includes/header.html" %}  
 
-  <h1 style="color: tomato">{{ title|title }}'s Challenge</h1>
+  <h1>{{ title|title }}'s Challenge</h1>
   {% if text is not None %}
-    <h2 style="color: #303030">{{ text }}</h2>
+    <h2>{{ text }}</h2>
   {% else %}
-    <p style="color: #303030">There is no challenge for this month yet!</p>
+    <p>There is no challenge for this month yet!</p>
   {% endif %}
 {% endblock %}
 
