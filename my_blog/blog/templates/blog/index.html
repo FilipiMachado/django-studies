@@ -1,9 +1,50 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
   My Blog
 {% endblock %}
 
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{% endblock %}
+
 {% block content %}
-  <h1>Bem vindo ao meu blog</h1>
+  <header id="main-navigation">
+    <h1><a href="">Fil's Blog</a></h1>
+    <nav>
+      <a href="">Todos os Posts</a>
+    </nav>
+  </header>
+  <section id="welcome">
+    <header>
+      <img src="" alt="Fil - Autor do Blog"/>
+      <h2>Blog do Fil</h2>
+    </header>
+    <p>Olá!, me chamo Filipi e curto muito todo esse universo da programação!</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>Últimos Posts</h2>
+
+    <ul>
+      <li>
+        <article class="post">
+          <a href="">
+            <img src="" />
+            <div class="post_content">
+              <h3>Mountain Hiking</h3>
+              <p>lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>O que eu faço</h2>
+    <p>lorem ipsum dolor sit amet, consect</p>
+    <p>lorem ipsum dolor sit amet, consectetur</p>
+  </section>
 {% endblock %}
