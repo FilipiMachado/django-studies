@@ -49,7 +49,7 @@ all_posts = [
         "slug": "into-the-woods",
         "image": "woods.jpg",
         "author": "Filipi",
-        "date": date(2020, 8, 5),
+        "date": date(2020, 5, 8),
         "title": "Nature At Its Best",
         "excerpt": "Nature is amazing! The amount of inspiration I get when walking in nature is incredible!",
         "content": """

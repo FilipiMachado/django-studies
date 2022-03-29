@@ -11,19 +11,17 @@
 
 {% block content %}
   <section id="summary">
-    <h2>Título do Post</h2>
+    <h2>{{ post.title }}</h2>
     <article>
-      <img src="{% static "blog/images/hills.jpg" %}" alt="Título do Post"/>
-      <address>Por Filipi</address>
+      <img src="{% static "blog/images/"|add:post.image %}" alt="Título do Post"/>
+      <address>Autor: {{ post.author }}</address>
       <div>
-        Última atualização em <time>28 de abril</time>
+        Última atualização em <time>{{ post.date|date:"d M Y" }}</time>
       </div>
     </article>
   </section>
 
   <main>
-    <p>lorem ipsum dolor sit amet, consectetur adip</p>
-    <p>lorem ipsum dolor sit amet, consectetur adip</p>
-    <p>lorem ipsum dolor sit amet, consectetur adip</p>
+    <p>{{ post.content|linebreaks }}</p>
   </main>
 {% endblock %}
